@@ -111,7 +111,7 @@ public class second_room_activity extends AppCompatActivity implements View.OnCl
         }
 
         else {
-            if (view != ib_door_two && view != iv_deadge)
+            if (view != ib_door_two && view != iv_deadge && view != bt_goBack)
             iNeedItem.show();
         }
 

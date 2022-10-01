@@ -4,26 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".endOfTheGame_Activity"
-    android:orientation="vertical"
     android:background="@color/black"
-    >
+    android:orientation="vertical"
+    tools:context=".endOfTheGame_Activity">
 
     <TextView
-        android:gravity="center"
+        android:id="@+id/tv_ending"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:gravity="center"
         android:text="You Escaped!"
+        android:textColor="#FF0000"
+        android:textSize="35dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.284"
-        android:textColor="#FF0000"
-        android:textSize="35dp"
-        android:fontFamily="casual"
-        android:id="@+id/tv_ending"
-        />
+        app:layout_constraintVertical_bias="0.107" />
 
     <TextView
         android:id="@+id/tv_sp"
@@ -35,8 +33,34 @@
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.844" />
+        app:layout_constraintVertical_bias="0.904" />
+
+    <ListView
+        android:id="@+id/lv_listOfEndings"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginTop="332dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="casual"
+        android:text="These are all of the endings you can get:"
+        android:textColor="#FF0000"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/lv_listOfEndings"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.25"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ending"
+        app:layout_constraintVertical_bias="0.778" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

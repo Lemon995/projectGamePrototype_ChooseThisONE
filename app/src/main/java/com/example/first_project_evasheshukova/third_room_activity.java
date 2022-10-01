@@ -55,7 +55,7 @@ public class third_room_activity extends AppCompatActivity implements View.OnCli
         if (iv_crossbar == view){
             iv_crossbar.setEnabled(false);
             iv_crossbar.setVisibility(View.INVISIBLE);
-            Toast toast = Toast.makeText(getApplicationContext(), "I GOT THE CROSSBAR NOW I CAN ESCAPE! QUICK NO TIME TO TURN BACK!!", Toast.LENGTH_LONG);
+            Toast toast = Toast.makeText(getApplicationContext(), "I GOT THE CROWBAR NOW I CAN ESCAPE! QUICK NO TIME TO TURN BACK!!", Toast.LENGTH_LONG);
             toast.show();
             item = "crossbar";
 
